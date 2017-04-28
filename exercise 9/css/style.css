@@ -1,0 +1,630 @@
+.clear:after {
+	content:"";
+	clear: both;
+	display: block;
+}
+.container {
+	margin-left: 200px;
+}
+header {
+	position: fixed;
+	width: 200px;
+	background: #331E38;
+	height: 100%;
+}
+header img {
+	width: 130px;
+	margin: 50px 0;
+}
+header ul {
+	width: 130px;
+	box-sizing: border-box;
+	padding-left: 0;
+}
+header li {
+	line-height: 3em;
+	border-bottom: 1px solid white;
+	list-style: none;
+	text-align: center;
+}
+header li:hover {
+	border-bottom: none;
+}
+header li a:hover {
+	font-size: 1.5em;
+	color: yellow;
+}
+header li a {
+	text-decoration: none;
+	color: white;
+}
+#slider {
+	height: 700px;
+	background: url(../res/sliderbg.jpg);
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+#slider div {
+	border: 4px solid white;
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px;
+	text-align: center;
+}
+#slider h1 {
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+#about {
+	height: 700px;
+	background: url(../res/aboutbg.jpg) rgba(255, 0, 0, 0.45);
+	background-size: cover;
+	background-blend-mode: overlay;
+	color: white;
+	padding: 3%;
+}
+#about h1 {
+	text-transform: uppercase;
+	font-size: 4em;
+	margin-bottom: 10px;
+}
+#about p {
+	width: 500px;
+}
+#services {
+	height: 300px;
+	background: #423d2d;
+	box-sizing: border-box;
+	padding: 0 0 30px 30px;
+}
+#services h1 {
+	color: #9C9681;
+	text-transform: uppercase;
+	font-size: 4em;
+	padding-top: 10px;
+	margin: 0 0 10px 0;
+}
+#services > div {
+	float: left;
+	width: 30%;
+	margin: 30px 10px;
+}
+#services h2 {
+	font-size: 1.5em;
+	margin: 0 0 10px 60px;
+	font-weight: bold;
+	color: salmon;
+	text-transform: capitalize;
+}
+#services p {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	color: white;
+	margin-left: 60px;
+}
+.services-text1 {
+	background: url(../res/services1.svg) top left/50px no-repeat;
+}
+.services-text2 {
+	background: url(../res/services2.svg) top left/50px no-repeat;
+}
+.services-text3 {
+	background: url(../res/services3.svg) top left/50px no-repeat;
+}
+#projects {
+	background: url(../res/projectsbg.jpg);
+	background-size: cover;
+	height: 300px;
+	padding-left: 3%;
+	box-sizing: border-box;
+	color: white;
+	padding-top: 150px;
+}
+#projects h1 {
+	text-transform: uppercase;
+	font-size: 4em;
+	margin-bottom: 10px;
+	margin-top:-10px;
+}
+#projects p {
+	width: 500px;
+	margin: 0;
+}
+#gallery {
+	height: 400px;
+	background: #B5B4C7;
+	box-sizing: border-box;
+	color: white;
+	padding: 3%;
+}
+#gallery div {
+	float: left;
+	width: 22%;
+	margin: 0 10px;
+}
+#gallery img {
+	border-radius: 3px;
+	width: 100%;
+}
+#gallery h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #585671;
+	text-transform: capitalize;
+	margin: 10px 0;
+}
+#gallery p {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	margin: 10px 0;
+}
+#contact {
+	height: 400px;
+	box-sizing: border-box;
+	color: white;
+	padding: 3%;
+	text-align: right;
+	padding-right: 50px;
+	background: url(../res/contactbg.jpg);
+	background-size: cover;
+}
+#contact h1 {
+	text-transform: uppercase;
+	font-size: 4em;
+	margin-bottom: 10px;
+}
+footer {
+	background: #C2095A;
+	font-size: 0.8em;
+}
+footer img {
+	width: 20px;
+}
+footer a {
+	margin-right: 5px;
+}
+footer div {
+	float: left;
+}
+footer div+div {
+	float: right;
+}
+footer p {
+	margin: 0;
+}
+
+/*tablet*/
+
+@media screen and (max-width: 960px) {
+.clear:after {
+	content:"";
+	clear: both;
+	display: block;
+}
+.container {
+	margin-left: 141px;
+	font-size-adjust: 0.71;
+}
+header {
+	position: fixed;
+	width: 141px;
+	background: #331E38;
+	height: 100%;
+	font-size-adjust: 0.71;
+}
+header img {
+	width: 92px;
+	margin: 50px 0;
+}
+header ul {
+	width: 92px;
+	box-sizing: border-box;
+	padding-left: 0;
+}
+header li {
+	line-height: 3em;
+	border-bottom: 1px solid white;
+	list-style: none;
+	text-align: center;
+}
+header li:hover {
+	border-bottom: none;
+}
+header li a:hover {
+	font-size: 1.5em;
+	color: yellow;
+}
+header li a {
+	text-decoration: none;
+	color: white;
+}
+#slider {
+	height: 700px;
+	background: url(../res/sliderbg.jpg);
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+#slider div {
+	border: 4px solid white;
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 11px;
+	text-align: center;
+}
+#slider h1 {
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+#about {
+	height: auto;
+	background: url(../res/aboutbg.jpg) rgba(255, 0, 0, 0.45) no-repeat;
+	background-size: cover;
+	background-blend-mode: overlay;
+	color: white;
+	padding: 3%;
+}
+#about h1 {
+	text-transform: uppercase;
+	font-size: 4em;
+	margin-bottom: 10px;
+}
+#about p {
+	width: 90%;
+}
+#services {
+	height: auto;
+	background: #423d2d;
+	box-sizing: border-box;
+	padding: 0 0 30px 30px;
+}
+#services h1 {
+	color: #9C9681;
+	text-transform: uppercase;
+	font-size: 3em;
+	padding-top: 10px;
+	margin: 0 0 10px 0;
+}
+#services > div {
+	float: left;
+	width: 90%;
+	margin: 10px 10px;
+}
+#services h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: salmon;
+	text-transform: capitalize;
+}
+#services p {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	color: white;
+}
+.services-text1 {
+	background: url(../res/services1.svg) top left/50px no-repeat;
+}
+.services-text2 {
+	background: url(../res/services2.svg) top left/50px no-repeat;
+}
+.services-text3 {
+	background: url(../res/services3.svg) top left/50px no-repeat;
+}
+#projects {
+	background: url(../res/projectsbg.jpg);
+	background-size: cover;
+	height: 300px;
+	padding-left: 3%;
+	box-sizing: border-box;
+	color: white;
+	padding-top: 50px;
+}
+#projects h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+	margin-bottom: 10px;
+	margin-top:-10px;
+}
+#projects p {
+	width: 95%;
+	margin: 0;
+}
+#gallery {
+	height: auto;
+	background: #B5B4C7;
+	box-sizing: border-box;
+	color: white;
+	padding: 3%;
+}
+#gallery div {
+	width: 100%;
+	margin: auto;
+}
+#gallery img {
+	border-radius: 3px;
+	width: 100%;
+}
+#gallery h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #585671;
+	text-transform: capitalize;
+	margin: 10px 0;
+}
+#gallery p {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	margin: 10px 0;
+}
+#contact {
+	height: auto;
+	box-sizing: border-box;
+	color: white;
+	padding: 3%;
+	text-align: center;
+	padding-right: 35px;
+	background: url(../res/contactbg.jpg);
+	background-size: cover;
+}
+#contact h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+footer {
+	background: #C2095A;
+	font-size: 0.8em;
+	text-align: center;
+	display: block;
+}
+footer img {
+	width: 14px;
+}
+footer a {
+	margin-right: 3.5px;
+}
+footer div {
+	width: 100%;
+	margin-bottom: 10px;
+}
+footer div+div {
+	width: 100%;
+}
+footer p {
+	margin: 0;
+}
+
+}
+
+/*mobilephones*/
+
+@media only screen and (max-width: 420px) {
+.clear:after {
+	content:"";
+	clear: both;
+	display: block;
+}
+.container {
+	margin-left: 0;
+}
+header {
+	position: relative;
+	width: 100%;
+	background: #331E38;
+	height: auto;
+	text-align: center;
+	padding: 10px;
+}
+header img {
+	width: 40px;
+	margin: 0;
+}
+header ul {
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 0;
+}
+header li {
+	line-height: 3em;
+	border-bottom: 1px solid white;
+	list-style: none;
+	text-align: left;
+	font-size: 12px;
+}
+header li:hover {
+	border-bottom: none;
+}
+header li a:hover {
+	font-size: 1.5em;
+	color: yellow;
+}
+header li a {
+	text-decoration: none;
+	color: white;
+}
+#slider {
+	height: 400px;
+	background: url(../res/sliderbg.jpg);
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+#slider div {
+	border: 4px solid white;
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px;
+	text-align: center;
+}
+#slider h1 {
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+#slider p {
+	font-size: 12px;
+}
+#about {
+	height: auto;
+	background: url(../res/aboutbg.jpg) rgba(255, 0, 0, 0.45);
+	background-size: cover;
+	background-blend-mode: overlay;
+	color: white;
+	padding: 3%;
+}
+#about h1 {
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-bottom: 11px;
+}
+#about p {
+	width: 100%;
+	font-size: 12px;
+}
+#services {
+	height: auto;
+	background: #423d2d;
+	box-sizing: border-box;
+	padding: 0 0 30px 30px;
+}
+#services h1 {
+	color: #9C9681;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	padding-top: 10px;
+	margin: 0 0 10px 0;
+}
+#services > div {
+	float: left;
+	width: 90%;
+	margin: 10px 10px;
+}
+#services h2 {
+	font-size: 1em;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: salmon;
+	text-transform: capitalize;
+}
+#services p {
+	font-size: 0.8em;
+	line-height: 1em;
+	color: white;
+}
+.services-text1 {
+	background: url(../res/services1.svg) top left/50px no-repeat;
+}
+.services-text2 {
+	background: url(../res/services2.svg) top left/50px no-repeat;
+}
+.services-text3 {
+	background: url(../res/services3.svg) top left/50px no-repeat;
+}
+#projects {
+	background: url(../res/projectsbg.jpg);
+	background-size: cover;
+	height: 250px;
+	padding-left: 3%;
+	box-sizing: border-box;
+	color: white;
+	padding: 10%;
+}
+#projects h1 {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+	margin-top:-10px;
+}
+#projects p {
+	width: 100%;
+	margin: 0;
+	font-size: 12px;
+}
+#gallery {
+	height: auto;
+	background: #B5B4C7;
+	box-sizing: border-box;
+	color: white;
+	padding: 3%;
+}
+#gallery div {
+	width: 100%;
+	margin: auto;
+}
+#gallery img {
+	border-radius: 3px;
+	width: 100%;
+}
+#gallery h2 {
+	font-size: 1em;
+	font-weight: bold;
+	color: #585671;
+	text-transform: capitalize;
+	margin: 10px 0;
+}
+#gallery p {
+	font-size: 0.7em;
+	line-height: 1.2em;
+	margin: 10px 0;
+}
+#contact {
+	height: auto;
+	box-sizing: border-box;
+	color: white;
+	padding: 3%;
+	text-align: center;
+	padding-right: 35px;
+	background: url(../res/contactbg.jpg);
+	background-size: cover;
+}
+#contact h1 {
+	text-transform: uppercase;
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+#contact p {
+	font-size: 12px;
+}
+footer {
+	background: #C2095A;
+	font-size: 0.8em;
+	text-align: center;
+	display: block;
+}
+footer img {
+	width: 14px;
+}
+footer a {
+	margin-right: 3.5px;
+}
+footer div {
+	width: 100%;
+	margin-bottom: 10px;
+}
+footer div+div {
+	width: 100%;
+}
+footer p {
+	margin: 0;
+}
+  
+}

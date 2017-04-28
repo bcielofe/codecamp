@@ -1,0 +1,89 @@
+cd\xampp\mysql\bin
+
+mysql.exe -u root
+
+USE musicstore;
+
+DESCRIBE albums;
+
+SHOW TABLES;
+
+SHOW CREATE TABLE albums;
+
+CREATE TABLE albums;
+
+ALTER TABLE albums DROP FOREIGN KEY albums_ibfk_1;
+
+ALTER TABLE albums ADD FOREIGN KEY (artist_id) REFERENCES artists(id) ON DELETE SET NULL ON UPDATE CASCADE;
+
+CREATE TABLE playlists (
+ id INT AUTO_INCREMENT NOT NULL,
+ data_created TIMESTAMP
+  DEFAULT CURRENT_TIMESTAMP,
+ user_id INT,
+ PRIMARY KEY(id),
+ FOREIGN KEY(user_id)
+  REFERENCES users(id)
+  ON UPDATE CASCADE
+  ON DELETE SET NULL
+);
+
+CREATE TABLE songs (
+ id INT AUTO_INCREMENT NOT NULL,
+ title VARCHAR(255) NOT NULL,
+ length INT,
+ game VARCHAR(255),
+ album_id INT,
+ PRIMARY KEY(id),
+ FOREIGN KEY (album_id)
+  REFERENCES albums(id)
+  ON UPDATE CASCADE
+  ON DELETE SET NULL
+);
+
+CREATE TABLE songs_playlists (
+ id INT AUTO_INCREMENT NOT NULL,
+ song_id INT,
+ playlist_id INT,
+ PRIMARY KEY(id),
+ FOREIGN KEY (song_id)
+  REFERENCES songs(id)
+  ON UPDATE CASCADE
+  ON DELETE SET NULL,
+ FOREIGN KEY (playlist_id)
+  REFERENCES playlists(id)
+  ON UPDATE CASCADE
+  ON DELETE SET NULL
+);
+
+INSERT INTO artists (name)
+ VALUES ('Rivermaya'),
+  ('PSY');
+
+INSERT INTO albums (name, year, artist_id)
+ VALUES ('Psy 6', '2012', 2), 
+  ('Trip', '1996', 1);
+
+INSERT INTO songs (title, length, genre, album_id)
+ VALUES ('Gangnam Style', 253, 'k-pop', 1),
+  ('Kundiman', 234, 'OPM', 2),
+  ('Kisapmata', 279, 'OPM', 2);
+
+SELECT * FROM artists;
+
+SELECT * FROM songs;
+
+ALTER TABLE songs CHANGE game genre VARCHAR(255);
+
+SELECT * FROM songs
+ WHERE genre='OPM';
+
+UPDATE songs
+ SET length=240
+ WHERE id=2;
+
+DELETE FROM songs
+WHERE length>260;
+
+SELECT * FROM songs
+WHERE title LIKE 'k%';

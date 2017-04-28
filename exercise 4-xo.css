@@ -1,0 +1,166 @@
+
+body {
+	margin: 0;
+}
+img {
+	width: 80%;
+}
+header {
+	background: url(DetoXpress.jpg) center/contain no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+	.brand-name {
+		width: 40%;
+		float: left;
+		box-sizing: border-box;
+		padding: 20px 5%;
+	}
+	.main-menu {
+		width: 60%;
+		float: right;
+		box-sizing: border-box;
+		text-align: right;
+		padding: 20px 6%;
+		margin:0;
+		text-transform: uppercase;
+	}
+		.main-menu li {
+			display: inline;
+			text-align: right;
+		}
+			/*.main-menu li a {
+				text-decoration: none;
+			}*/
+.clear:after ,.footer-1:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*.main-menu {
+	text-align: right;
+}*/
+.hero-caption{
+	/*text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: green;*/
+	/*padding: 0 5%;
+	width: 80%;*/
+	height: 300px;
+}
+.sub-menu {
+	background: crimson;
+	margin: 0 5%;
+}
+.sub-menu li{
+	display: inline-block;
+	padding: 5px 5px;
+	/*background: green;*/
+}
+	/*.sub-menu li a {
+		text-decoration: none;
+	}*/
+/*.sub-menu{
+	text-align: left;
+	margin-left: 0 0;
+}*/
+main {
+	/*background: black;*/
+/*	color: #fff;*/
+	/*min-height: 500px;*/
+	padding: 0 5%;
+	}
+	section.left {
+		width: 69%;
+		/*background: thistle;*/
+		height: 100%;
+		float: left;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 5%;
+	}
+	section.right {
+		width: 30%;
+		background: Gainsboro;
+		height: 100%;
+		float: right;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+		.search {
+			width: 90%;
+		}
+			.search button img {
+				width: 30px;
+				height: 30px;
+			}
+	.right > div {
+		padding: 5%;
+	}
+	.topright {
+		background: lightseagreen;
+		padding: 5%;
+	}	
+	.pagination {
+		background: Gainsboro;
+		width: 80%;
+		padding: 2%;
+	}	
+	.pagination li {
+		display: inline-block;
+		padding: 0 1px;
+	}
+footer {
+	min-height: 200px;
+	padding: 10px 20px;
+	border: 1px solid black;
+	background: lightseagreen;
+}
+/*.footer-1{
+	float: left; 
+	background: lightseagreen;
+}*/
+/*.footer-1 {
+	height: 300px;
+}*/
+.firstfoot {
+	float: left;
+	box-sizing: border-box;
+	/*overflow: hidden;*/
+	text-overflow: ellipsis;
+	width: 40%;
+	padding: 10px;
+}
+.secondfoot {
+	float: left;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 10px;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+.sub-menu-v {
+	list-style: none;
+	padding: 0;
+	padding: 10px;
+}
+.thirdfoot {
+	float: left;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 10px;
+}
+	.thirdfoot img {
+		width: 30px;
+		height: 30px;
+		padding: 2px;
+	}
+.footer-2 {
+	padding: 10px;
+	text-align: right;
+	/*float: right;*/
+}
+

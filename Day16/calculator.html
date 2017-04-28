@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+	
+	</style>
+</head>
+<body>
+
+	<input type='text' id='input'></input>
+	<br>
+
+	<button id="zero">0</button>
+	<button id="one">1</button>
+	<button id="two">2</button>
+	<button id="three">3</button>
+	<br>
+	<button id="four">4</button>
+	<button id="five">5</button>
+	<button id="six">6</button>
+	<button id="seven">7</button>
+	<br>
+	<button id="eight">8</button>
+	<button id="nine">9</button>
+	<button id="plus">&plus;</button>
+	<button id="minus">&minus;</button>
+	<br>
+	<button id="times">&times;</button>
+	<button id="divide">&divide;</button>
+	<button id="dot">.</button>
+	<button id="equal">=</button>
+
+	
+
+<script type="text/javascript">
+	document.getElementById('zero').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('zero').innerHTML;
+	}
+	document.getElementById('one').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('one').innerHTML;
+	}
+	document.getElementById('two').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('two').innerHTML;
+	}
+	document.getElementById('three').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('three').innerHTML;
+	}
+	document.getElementById('four').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('four').innerHTML;
+	}
+	document.getElementById('five').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('five').innerHTML;
+	}
+	document.getElementById('six').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('six').innerHTML;
+	}
+	document.getElementById('seven').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('seven').innerHTML;
+	}
+	document.getElementById('eight').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('eight').innerHTML;
+	}
+	document.getElementById('nine').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('nine').innerHTML;
+	}
+	document.getElementById('plus').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('plus').innerHTML;
+	}
+	document.getElementById('minus').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('minus').innerHTML;
+	}
+	document.getElementById('times').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('times').innerHTML;
+	}
+	document.getElementById('divide').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('divide').innerHTML;
+	}
+	document.getElementById('dot').onclick = function () {
+		document.getElementById('input').value+= document.getElementById('dot').innerHTML;
+	}
+	document.getElementById('equal').onclick = function () {
+		document.getElementById('input').value = eval(document.getElementById('input').value);
+	}
+</script>
+
+
+</body>
+</html>

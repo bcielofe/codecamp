@@ -1,0 +1,193 @@
+
+body {
+	margin: 0;
+}
+img {
+	width: 100%;
+}
+h1 {
+	padding-top: 10px;
+}
+select {
+	background: transparent;
+   	border: none;
+}
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a {
+	text-decoration: none;
+}
+li:hover {
+	background: salmon;
+}
+li:active {
+	background: brown;
+}
+button {
+	background: lightblue;
+}
+.clear:after ,.footer-1:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+header {
+	background: url(sunflower12.jpg) left/contain no-repeat, 
+	url(sunflower10.jpg) right/contain no-repeat;
+}
+.brand-name {
+	width: 40%;
+	float: left;
+	box-sizing: border-box;
+	padding: 20px 5%;
+	color: black;
+}
+.main-menu {
+	width: 60%;
+	float: right;
+	box-sizing: border-box;
+	text-align: right;
+	padding: 20px 6%;
+	margin:0;
+	text-transform: uppercase;
+}
+header .clear {
+	background: WHITE;
+	opacity: 0.80;
+	margin: 0 5%;
+}
+	.main-menu li {
+		display: inline;
+		text-align: right;
+		padding: 0 2%;
+	}
+.hero-caption {
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: green;
+	padding: 0 5%;
+}
+.sub-menu {
+	background: #DE5C44;
+	opacity: 0.75;
+	margin: 0 5%;
+}
+	.sub-menu li{
+		display: inline-block;
+		padding: 5px 5px;
+	}
+
+
+main {
+	padding: 0 5%;
+}
+section.left {
+	width: 69%;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 5%;
+}
+.topleft {
+	width: 100%;
+	position: relative;
+}
+	.one {
+		float:left;
+	}
+	.two {
+		float: right;
+	}
+	.featured {
+		background: #755c48;
+		padding: 0 3%;
+		padding-bottom: 10px;
+	}
+.article {
+	width: 100%;
+}
+.pagination {
+	background: #DAE69F;
+	width: 80%;
+	padding: 2%;
+}	
+	.pagination li {
+		display: inline-block;
+		padding: 0 1px;
+	}
+
+section.right {
+	width: 30%;
+	background: #DAE69F;
+	height: 100%;
+	float: right;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+	.right > div {
+		padding: 5%;
+	}
+.topright {
+	background: #F4CF64;
+	padding: 5%;
+}
+	.search {
+		width: 70%;
+	}	
+.sub-menu-v {
+	list-style: none;
+	padding: 0;
+	padding: 10px;
+}
+
+footer {
+	min-height: 100px;
+	background: #CED3F1;
+}
+.footer-1{
+	padding: 0 3%;
+}
+	.firstfoot {
+		float: left;
+		box-sizing: border-box;
+		text-overflow: ellipsis;
+		width: 40%;
+		padding: 2%;
+		padding-left: 0;
+	}
+	.secondfoot {
+		float: left;
+		box-sizing: border-box;
+		width: 30%;
+		padding: 2%;
+		border-right: 1px solid white;
+		border-left: 1px solid white;
+	}
+	.thirdfoot {
+		float: left;
+		box-sizing: border-box;
+		width: 30%;
+		padding: 2%;
+	}
+		.thirdfoot img {
+			width: 30px;
+			height: 30px;
+			padding: 2px;
+		}
+.footer-2 {
+	padding: 10px 2%;
+	text-align: left;
+	border-top: 1px solid white;
+	background: #8482B6;
+	position: relative;
+}
+	.footer-2 span:last-child {
+		position: absolute;
+		right: 2%;
+	}

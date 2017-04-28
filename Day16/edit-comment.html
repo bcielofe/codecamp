@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit-Comment</title>
+	<style type="text/css">
+	#modal {
+		display: none;
+	}
+	</style>
+
+</head>
+<body>
+	<div id="comment">
+		<p> Original Comment</p>
+	</div>
+
+	<div id="modal">
+		<textarea id='input' rows="4" cols="50">
+			</textarea>
+		
+		<button id="save"> Save </button>
+	</div>
+
+	<button id="edit"> Edit </button>
+
+<script type="text/javascript">
+	document.getElementById('edit').onclick = function() {
+		document.getElementById('comment').style.display="none";
+		document.getElementById('modal').style .display="block"; 
+	}
+
+	document.getElementById('save').onclick = function() {
+		document.getElementById('modal').style .display="none"; 
+		var x = document.getElementById("input").value;
+    	document.getElementById("comment").innerHTML = x;
+    	document.getElementById('comment').style.display="block";
+	}
+
+</script>
+
+</div>
+</body>
+</html>

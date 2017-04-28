@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Mathematics of Love</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	<script src="scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	#question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #name2, #intro2, #start2, #question1x, #question2x, #question3x, #question4x, #question5x, #question6x, #question7x, #question8x, #question9x, #question10x, #finish, #likable1, #likable2, #compatibility {
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<input id="name1" type="text" name="name" placeholder="Name">
+	<p id="intro">Please type your NAME then click START when you're ready.</p>
+	<button id="start">Start</button>
+<div id="person1">
+	<div id="question1">
+		1. Are you an animal lover or would you avoid keeping animals at home?
+		<div id="choose1">
+			<button id="choice_a1">Animal Lover</button>
+			<button id="choice_b1">Avoids Animals</button>
+		</div>
+		<div id="want_another1">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a1">Animal Lover</button>
+			<button id="choice_another_b1">Avoids Animals</button>
+		</div>
+		<div id="importance1">
+			<p>How important is this to you?</p>
+			<button id="one1">Not at all important</button>
+			<button id="ten1">A little important</button>
+			<button id="fifty1">Somewhat important</button>
+			<button id="hundred1">Very important</button>
+			<button id="twofifty1">Mandatory</button>
+		</div>
+	</div>
+	<div id="question2">
+		2. Do you like tattoos and body piercing?
+		<div id="choose2">
+			<button id="choice_a2">Yes</button>
+			<button id="choice_b2">No</button>
+		</div>
+		<div id="want_another2">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a2">Yes</button>
+			<button id="choice_another_b2">No</button>
+		</div>
+		<div id="importance2">
+			<p>How important is this to you?</p>
+			<button id="one2">Not at all important</button>
+			<button id="ten2">A little important</button>
+			<button id="fifty2">Somewhat important</button>
+			<button id="hundred2">Very important</button>
+			<button id="twofifty2">Mandatory</button>
+		</div>
+	</div>
+	<div id="question3">
+		3. Are you religious?
+		<div id="choose3">
+			<button id="choice_a3">Yes</button>
+			<button id="choice_b3">No</button>
+		</div>
+		<div id="want_another3">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a3">Yes</button>
+			<button id="choice_another_b3">No</button>
+		</div>
+		<div id="importance3">
+			<p>How important is this to you?</p>
+			<button id="one3">Not at all important</button>
+			<button id="ten3">A little important</button>
+			<button id="fifty3">Somewhat important</button>
+			<button id="hundred3">Very important</button>
+			<button id="twofifty3">Mandatory</button>
+		</div>
+	</div>
+	<div id="question4">
+		4. Clubbing or candlelight dinner?
+		<div id="choose4">
+			<button id="choice_a4">Clubbing</button>
+			<button id="choice_b4">Candlelight Dinner</button>
+		</div>
+		<div id="want_another4">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a4">Clubbing</button>
+			<button id="choice_another_b4">Candlelight Dinner</button>
+		</div>
+		<div id="importance4">
+			<p>How important is this to you?</p>
+			<button id="one4">Not at all important</button>
+			<button id="ten4">A little important</button>
+			<button id="fifty4">Somewhat important</button>
+			<button id="hundred4">Very important</button>
+			<button id="twofifty4">Mandatory</button>
+		</div>
+	</div>
+	<div id="question5">
+		5. Backpacking or a luxury hotel?
+		<div id="choose5">
+			<button id="choice_a5">Backpacking</button>
+			<button id="choice_b5">Luxury Hotel</button>
+		</div>
+		<div id="want_another5">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a5">Backpacking</button>
+			<button id="choice_another_b5">Luxury Hotel</button>
+		</div>
+		<div id="importance5">
+			<p>How important is this to you?</p>
+			<button id="one5">Not at all important</button>
+			<button id="ten5">A little important</button>
+			<button id="fifty5">Somewhat important</button>
+			<button id="hundred5">Very important</button>
+			<button id="twofifty5">Mandatory</button>
+		</div>
+	</div>
+	<div id="question6">
+		6. Do you plan your life or live for the moment?
+		<div id="choose6">
+			<button id="choice_a6">Plan Life</button>
+			<button id="choice_b6">Live for the Moment</button>
+		</div>
+		<div id="want_another6">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a6">Plan Life</button>
+			<button id="choice_another_b6">Live for the Moment</button>
+		</div>
+		<div id="importance6">
+			<p>How important is this to you?</p>
+			<button id="one6">Not at all important</button>
+			<button id="ten6">A little important</button>
+			<button id="fifty6">Somewhat important</button>
+			<button id="hundred6">Very important</button>
+			<button id="twofifty6">Mandatory</button>
+		</div>
+	</div>
+	<div id="question7">
+		7. Are you addicted to anything?
+		<div id="choose7">
+			<button id="choice_a7">Yes</button>
+			<button id="choice_b7">No</button>
+		</div>
+		<div id="want_another7">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a7">Yes</button>
+			<button id="choice_another_b7">No</button>
+		</div>
+		<div id="importance7">
+			<p>How important is this to you?</p>
+			<button id="one7">Not at all important</button>
+			<button id="ten7">A little important</button>
+			<button id="fifty7">Somewhat important</button>
+			<button id="hundred7">Very important</button>
+			<button id="twofifty7">Mandatory</button>
+		</div>
+	</div>
+	<div id="question8">
+		8. Would you sulk or would you confront?
+		<div id="choose8">
+			<button id="choice_a8">Sulk</button>
+			<button id="choice_b8">Confront</button>
+		</div>
+		<div id="want_another8">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a8">Sulk</button>
+			<button id="choice_another_b8">Confront</button>
+		</div>
+		<div id="importance8">
+			<p>How important is this to you?</p>
+			<button id="one8">Not at all important</button>
+			<button id="ten8">A little important</button>
+			<button id="fifty8">Somewhat important</button>
+			<button id="hundred8">Very important</button>
+			<button id="twofifty8">Mandatory</button>
+		</div>
+	</div>
+	<div id="question9">
+		9. Are you friends with any of your exes?
+		<div id="choose9">
+			<button id="choice_a9">Yes</button>
+			<button id="choice_b9">No</button>
+		</div>
+		<div id="want_another9">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a9">Yes</button>
+			<button id="choice_another_b9">No</button>
+		</div>
+		<div id="importance9">
+			<p>How important is this to you?</p>
+			<button id="one9">Not at all important</button>
+			<button id="ten9">A little important</button>
+			<button id="fifty9">Somewhat important</button>
+			<button id="hundred9">Very important</button>
+			<button id="twofifty9">Mandatory</button>
+		</div>
+	</div>
+	<div id="question10">
+		10. Do you think romantic gifts have to be memorable or do they have to be useful?
+		<div id="choose10">
+			<button id="choice_a10">Memorable</button>
+			<button id="choice_b10">Useful</button>
+		</div>
+		<div id="want_another10">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a10">Memorable</button>
+			<button id="choice_another_b10">Useful</button>
+		</div>
+		<div id="importance10">
+			<p>How important is this to you?</p>
+			<button id="one10">Not at all important</button>
+			<button id="ten10">A little important</button>
+			<button id="fifty10">Somewhat important</button>
+			<button id="hundred10">Very important</button>
+			<button id="twofifty10">Mandatory</button>
+		</div>
+	</div>
+	<input id="name2" type="text" name="name" placeholder="Name">
+	<p id="intro2">Person 1's response has been recorded. Please type the NAME of the other person then click START.
+	</p>
+	<button id="start2">Start</button>
+</div>
+
+<!-- PERSON2 -->
+
+<div id="person2">
+	<div id="question1x">
+		1. Are you an animal lover or would you avoid keeping animals at home?
+		<div id="choose1x">
+			<button id="choice_a1x">Animal Lover</button>
+			<button id="choice_b1x">Avoids Animals</button>
+		</div>
+		<div id="want_another1x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a1x">Animal Lover</button>
+			<button id="choice_another_b1x">Avoids Animals</button>
+		</div>
+		<div id="importance1x">
+			<p>How important is this to you?</p>
+			<button id="one1x">Not at all important</button>
+			<button id="ten1x">A little important</button>
+			<button id="fifty1x">Somewhat important</button>
+			<button id="hundred1x">Very important</button>
+			<button id="twofifty1x">Mandatory</button>
+		</div>
+	</div>
+	<div id="question2x">
+		2. Do you like tattoos and body piercing?
+		<div id="choose2x">
+			<button id="choice_a2x">Yes</button>
+			<button id="choice_b2x">No</button>
+		</div>
+		<div id="want_another2x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a2x">Yes</button>
+			<button id="choice_another_b2x">No</button>
+		</div>
+		<div id="importance2x">
+			<p>How important is this to you?</p>
+			<button id="one2x">Not at all important</button>
+			<button id="ten2x">A little important</button>
+			<button id="fifty2x">Somewhat important</button>
+			<button id="hundred2x">Very important</button>
+			<button id="twofifty2x">Mandatory</button>
+		</div>
+	</div>
+	<div id="question3x">
+		3. Are you religious?
+		<div id="choose3x">
+			<button id="choice_a3x">Yes</button>
+			<button id="choice_b3x">No</button>
+		</div>
+		<div id="want_another3x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a3x">Yes</button>
+			<button id="choice_another_b3x">No</button>
+		</div>
+		<div id="importance3x">
+			<p>How important is this to you?</p>
+			<button id="one3x">Not at all important</button>
+			<button id="ten3x">A little important</button>
+			<button id="fifty3x">Somewhat important</button>
+			<button id="hundred3x">Very important</button>
+			<button id="twofifty3x">Mandatory</button>
+		</div>
+	</div>
+	<div id="question4x">
+		4. Clubbing or candlelight dinner?
+		<div id="choose4x">
+			<button id="choice_a4x">Clubbing</button>
+			<button id="choice_b4x">Candlelight Dinner</button>
+		</div>
+		<div id="want_another4x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a4x">Clubbing</button>
+			<button id="choice_another_b4x">Candlelight Dinner</button>
+		</div>
+		<div id="importance4x">
+			<p>How important is this to you?</p>
+			<button id="one4x">Not at all important</button>
+			<button id="ten4x">A little important</button>
+			<button id="fifty4x">Somewhat important</button>
+			<button id="hundred4x">Very important</button>
+			<button id="twofifty4x">Mandatory</button>
+		</div>
+	</div>
+	<div id="question5x">
+		5. Backpacking or a luxury hotel?
+		<div id="choose5x">
+			<button id="choice_a5x">Backpacking</button>
+			<button id="choice_b5x">Luxury Hotel</button>
+		</div>
+		<div id="want_another5x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a5x">Backpacking</button>
+			<button id="choice_another_b5x">Luxury Hotel</button>
+		</div>
+		<div id="importance5x">
+			<p>How important is this to you?</p>
+			<button id="one5x">Not at all important</button>
+			<button id="ten5x">A little important</button>
+			<button id="fifty5x">Somewhat important</button>
+			<button id="hundred5x">Very important</button>
+			<button id="twofifty5x">Mandatory</button>
+		</div>
+	</div>
+	<div id="question6x">
+		6. Do you plan your life or live for the moment?
+		<div id="choose6x">
+			<button id="choice_a6x">Plan Life</button>
+			<button id="choice_b6x">Live for the Moment</button>
+		</div>
+		<div id="want_another6x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a6x">Plan Life</button>
+			<button id="choice_another_b6x">Live for the Moment</button>
+		</div>
+		<div id="importance6x">
+			<p>How important is this to you?</p>
+			<button id="one6x">Not at all important</button>
+			<button id="ten6x">A little important</button>
+			<button id="fifty6x">Somewhat important</button>
+			<button id="hundred6x">Very important</button>
+			<button id="twofifty6x">Mandatory</button>
+		</div>
+	</div>
+	<div id="question7x">
+		7. Are you addicted to anything?
+		<div id="choose7x">
+			<button id="choice_a7x">Yes</button>
+			<button id="choice_b7x">No</button>
+		</div>
+		<div id="want_another7x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a7x">Yes</button>
+			<button id="choice_another_b7x">No</button>
+		</div>
+		<div id="importance7x">
+			<p>How important is this to you?</p>
+			<button id="one7x">Not at all important</button>
+			<button id="ten7x">A little important</button>
+			<button id="fifty7x">Somewhat important</button>
+			<button id="hundred7x">Very important</button>
+			<button id="twofifty7x">Mandatory</button>
+		</div>
+	</div>
+	<div id="question8x">
+		8. Would you sulk or would you confront?
+		<div id="choose8x">
+			<button id="choice_a8x">Sulk</button>
+			<button id="choice_b8x">Confront</button>
+		</div>
+		<div id="want_another8x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a8x">Sulk</button>
+			<button id="choice_another_b8x">Confront</button>
+		</div>
+		<div id="importance8x">
+			<p>How important is this to you?</p>
+			<button id="one8x">Not at all important</button>
+			<button id="ten8x">A little important</button>
+			<button id="fifty8x">Somewhat important</button>
+			<button id="hundred8x">Very important</button>
+			<button id="twofifty8x">Mandatory</button>
+		</div>
+	</div>
+	<div id="question9x">
+		9. Are you friends with any of your exes?
+		<div id="choose9x">
+			<button id="choice_a9x">Yes</button>
+			<button id="choice_b9x">No</button>
+		</div>
+		<div id="want_another9x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a9x">Yes</button>
+			<button id="choice_another_b9x">No</button>
+		</div>
+		<div id="importance9x">
+			<p>How important is this to you?</p>
+			<button id="one9x">Not at all important</button>
+			<button id="ten9x">A little important</button>
+			<button id="fifty9x">Somewhat important</button>
+			<button id="hundred9x">Very important</button>
+			<button id="twofifty9x">Mandatory</button>
+		</div>
+	</div>
+	<div id="question10x">
+		10. Do you think romantic gifts have to be memorable or do they have to be useful?
+		<div id="choose10x">
+			<button id="choice_a10x">Memorable</button>
+			<button id="choice_b10x">Useful</button>
+		</div>
+		<div id="want_another10x">
+			<p>What answer would you like your partner to give?</p>
+			<button id="choice_another_a10x">Memorable</button>
+			<button id="choice_another_b10x">Useful</button>
+		</div>
+		<div id="importance10x">
+			<p>How important is this to you?</p>
+			<button class="finish" id="one10x">Not at all important</button>
+			<button class="finish" id="ten10x">A little important</button>
+			<button class="finish" id="fifty10x">Somewhat important</button>
+			<button class="finish" id="hundred10x">Very important</button>
+			<button class="finish" id="twofifty10x">Mandatory</button>
+		</div>
+	</div>
+	<div id="finish">
+		Please click SUBMIT to save your answers.
+		<button id="submit">Submit</button>
+	</div>
+	
+	<p id="likable1">Person1 is blank percent likeable by Person2's standards.</p>
+	<p id="likable2">Person2 is blank percent likeable by Person1's standars.</p>
+	<p id="compatibility">Person1 and Person2 are blank percent compatible.</p>
+
+</div>
+
+
+
+
+
+</body>
+</html>

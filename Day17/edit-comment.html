@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Comment</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	<style>
+	#modal {
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<p id="comment">Original Comment</p>
+	<button id="edit">Edit</button>
+	<div id="modal">
+		<textarea id='input' rows="4" cols="50">
+			</textarea>
+		
+		<button id="save"> Save </button>
+	</div>
+
+	<script>
+		$(function () {
+			$("#edit").click(function(){
+				var x = $("#comment").html();
+				$("#input").val(x);
+				$("#comment").hide();
+				$("#modal").show();
+			});
+			$("#save").click(function(){
+				$("#modal").hide();
+				var x = $("#input").val();
+    			$("#comment").html(x);
+				$("#comment").show();
+			})
+		})
+	</script>
+</body>
+</html>
